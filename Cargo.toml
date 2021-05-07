@@ -1,0 +1,6 @@
+cargo-features = ["per-package-target"]
+
+[package]
+name = "foo"
+version = "0.0.0"
+authors = []

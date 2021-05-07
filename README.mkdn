@@ -1,0 +1,19 @@
+# `per-package-target` Cargo repro case
+
+This is the simplest application of the `per-package-target` unstable Cargo
+feature that I could think of, to help me explain a bug report.
+
+## Steps
+
+`cargo build`
+
+Expected: builds
+
+Actual: fails
+
+## Notes
+
+- The `rust-toolchain` is here to ensure a nightly Cargo; the version is
+  arbitrarily chosen from a project of mine, and is well past when
+  `per-package-target` landed.
+- The `Cargo.toml` is taken verbatim from the Cargo testsuite for this feature.
